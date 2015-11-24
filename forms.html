@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!-- creating froms using hyphen-->
+<html>
+  <head>
+    <title> Froms using hyphen </title>
+    <link rel="stylesheet" type="text/css" href="hyphen.css">
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="formDiv">
+      <form id="formGrid">
+        <div class="grid">
+          <div class="grid__item grid__item--3">Create Quote</div>
+          <div class="grid__item grid__item--3">
+            <button class="btn btn--default btn--tertiary btn--round">Cancel</button>
+            <button class="btn btn--default btn--success btn--round">Save</button>
+          </div>
+        </div>
+        <br>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <label> Customer Details </label>
+          </div>
+        </div>
+        <hr>
+        <div class="grid">
+          <div class="grid__item grid__item--2">
+            <label class="label"> Username </label>
+            <input type="text" class="input text--small input--disabled" placeholder="username"/>
+          </div>
+          <div class="grid__item grid__item--2">
+            <label class="label"> Email id </label>
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-envelope input-icon__icon"></i>
+              <input type="text" class="input text--small input--disabled" placeholder="Email id"/>
+            </div>
+          </div>
+          <div class="grid__item grid__item--2">
+            <label class="label"> Order no </label>
+            <input type="text" class="input text--small input--disabled" placeholder="Order no"/>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--1">
+            <label>Quote Details</label>
+          </div>
+        </div>
+        <hr>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <label class="label"> Quote name </label>
+            <input type="text" class="input text--small" placeholder="Quote name"/>
+          </div>
+          <div class="grid__item grid__item--3">
+            <label class="label"> Customer name* </label>
+            <input type="text" class="input input--alert text--small" placeholder="Customer name*"/>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <div class="input-icon input-icon--right">
+              <label class="label"> Delivery Goods to*
+                <i class="fa fa-pencil-square-o input-icon__icon"></i>
+              </label>
+            </div>
+            <textarea class="input text--small" rows="2"></textarea>
+          </div>
+          <div class="grid__item grid__item--3">
+            <div class="input-icon input-icon--right">
+              <label class="label"> Billing to*
+                <i class="fa fa-pencil-square-o input-icon__icon"></i>
+              </label>
+            </div>
+            <textarea class="input text--small" rows="2"></textarea>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <label class="label"> Address verified </label>
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-toggle-off input-icon__icon"></i>
+            </div>
+          </div>
+          <div class="grid__item grid__item--3">
+            <label class="label"> Order type </label>
+            <select class="input"></select>
+          </div>
+        </div>
+        <br>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <label> Additional Information </label>
+          </div>
+        </div>
+        <hr>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <label class="label"> Payment terms</label>
+            <select class="input"></select>
+          </div>
+          <div class="grid__item grid__item--3">
+            <label class="label"> PO Number </label>
+            <input type="text" class="input text--small" placeholder="PO Number"/>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <label class="label"> Expected Delivery Date </label>
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-calendar input-icon__icon"></i>
+              <input type="text" class="input text--small"/>
+            </div>
+          </div>
+          <div class="grid__item grid__item--3">
+            <label class="label"> Requested Date </label>
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-calendar input-icon__icon"></i>
+              <input type="text" class="input text--small"/>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="grid">
+          <div class="grid__item grid__item--2">
+            <label> Note to.... </label>
+          </div>
+        </div>
+        <hr>
+        <div class="grid">
+          <div class="grid__item grid__item--2">
+            <label class="label"> Customer </label>
+            <textarea class="input text--small input--disabled" placeholder="Customer"></textarea>
+          </div>
+          <div class="grid__item grid__item--2">
+            <label class="label"> Back Office </label>
+            <textarea class="input text--small input--disabled" placeholder="Back Office"></textarea>
+          </div>
+          <div class="grid__item grid__item--2">
+            <label class="label"> Carrier </label>
+            <textarea class="input text--small input--disabled" placeholder="Carrier"></textarea>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

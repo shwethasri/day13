@@ -1,0 +1,22 @@
+/* css file for forms.html*/
+body{
+  background-color:#FFF8DC;
+  padding: 25px;
+}
+#formDiv{
+    align-items: center;
+    background-color: #F0FFF0;
+
+    margin: 0 auto;
+    /*overflow: scroll;*/
+    padding: 25px;
+    width: 60%;
+}
+#formGrid{
+  align-items: center;
+  background-color: #C0C0C0;
+  border: double 5px;
+  border-color: #E0FFFF;
+  border-radius: 10px;
+  padding: 25px;
+}
