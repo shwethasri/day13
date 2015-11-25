@@ -1,22 +1,54 @@
 /* css file for forms.html*/
 body{
-  background-color:#FFF8DC;
-  padding: 25px;
+    background-color:#FFF8DC;
+    padding: 25px;
 }
-#formDiv{
+#formDiv, #getPassword, #loginDiv, #resetPassword, #signup{
     align-items: center;
-    background-color: #F0FFF0;
-
+    align-self: center;
+    display: none;
     margin: 0 auto;
     /*overflow: scroll;*/
     padding: 25px;
     width: 60%;
 }
-#formGrid{
-  align-items: center;
-  background-color: #C0C0C0;
-  border: double 5px;
-  border-color: #E0FFFF;
-  border-radius: 10px;
-  padding: 25px;
+#formDiv, #getPassword{
+    background-color: #F0FFF0;
+}
+#forgetPassword, #formGrid, #loginForm, #resetPasswordForm, #signupForm{
+    align-items: center;
+    background-color: #C0C0C0;
+    border: double 5px;
+    border-color: #E0FFFF;
+    border-radius: 10px;
+    padding: 25px;
+}
+hr{
+    color: #3399ff;
+}
+.hyperlink{
+    color: black;
+    display: block;
+    font-size: 12px;
+    padding: 3px;
+}
+#loginDiv{
+  display: block;
+}
+#loginDiv, #signup{
+    background-color: #e8e8e8;
+    border-color: #2f4f4f;
+    border-radius: 1%;
+}
+#resetPassword{
+    background-color: #FFDAB9;
+}
+.size{
+    color: silver;
+    font-size: 15px;
+}
+.span{
+    border-radius: 50%;
+    background-color: #787878;
+    align-items: center;
 }
