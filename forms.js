@@ -4,6 +4,7 @@ function loginPage(){
   $('#signup').hide();
   $('#getPassword').hide();
   $('#resetPassword').hide();
+  $('#login').hide();
 }
 function signoutPage(){
   $('#loginDiv').show();
@@ -11,6 +12,7 @@ function signoutPage(){
   $('#signup').hide();
   $('#getPassword').hide();
   $('#resetPassword').hide();
+  $('#login').hide();
 }
 function signupPage(){
   $('#loginDiv').hide();
@@ -18,6 +20,7 @@ function signupPage(){
   $('#signup').show();
   $('#getPassword').hide();
   $('#resetPassword').hide();
+  $('#login').hide();
 }
 function getPasswordPage(){
   $('#loginDiv').hide();
@@ -25,6 +28,7 @@ function getPasswordPage(){
   $('#signup').hide();
   $('#getPassword').show();
   $('#resetPassword').hide();
+  $('#login').hide();
 }
 function resetPasswordPage(){
   $('#loginDiv').hide();
@@ -32,4 +36,14 @@ function resetPasswordPage(){
   $('#signup').hide();
   $('#getPassword').hide();
   $('#resetPassword').show();
+  $('#login').hide();
+}
+function fgLoginPage()
+{
+  $('#loginDiv').hide();
+  $('#formDiv').hide();
+  $('#signup').hide();
+  $('#getPassword').hide();
+  $('#resetPassword').hide();
+  $('#login').show();
 }

@@ -11,41 +11,63 @@
   </head>
   <body>
     <!-- login div-->
-    <div id="loginDiv" class="styleDiv">
+    <div id="loginDiv" class="styleDiv show">
       <form id="loginForm" class="design">
         <div class="grid">
           <div class="grid__item grid__item--12">
-            <label> User Login </label>
+            <label> Guest Login </label>
           </div>
         </div>
         <hr>
         <div class="grid">
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
-              <i class="fa fa-user input-icon__icon"></i>
-              <label class="label">Username*</label>
+              <i class="fa fa-envelope input-icon input-icon__icon"></i>
+              <label class="label"> E-mail </label>
             </div>
             <div class="input-icon input-icon--right">
-              <i class="fa fa-user input-icon__icon"></i>
-              <input class="input text--small" type="text" placeholder="username"/>
-            </div>
-          </div>
-          <div class="grid__item grid__item--2">
-            <div class="input-icon input-icon--right">
-              <i class="fa fa-lock input-icon__icon"></i>
-              <label class="label">Password*</label>
-            </div>
-            <div class="input-icon input-icon--right">
-              <i class="fa fa-lock input-icon__icon"></i>
-              <input class="input text--small" type="password" placeholder="Password"/>
+              <i class="fa fa-envelope input-icon input-icon__icon"></i>
+              <input class="input text--small" type="text" placeholder="E-mail"/>
             </div>
           </div>
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <br>
-            <button id="loginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
-            <a id="forgetPasswordLink" class="hyperlink" href="#getPassword" onclick="getPasswordPage()"> forgetpassword </a>
+            <button id="gloginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
           </div>
         </div>
+          <div class="grid">
+            <div class="grid__item grid__item--12">
+              <label> User Login </label>
+            </div>
+          </div>
+          <hr>
+          <div class="grid">
+            <div class="grid__item grid__item--2">
+              <div class="input-icon input-icon--right">
+                <i class="fa fa-user input-icon__icon"></i>
+                <label class="label">Username*</label>
+              </div>
+              <div class="input-icon input-icon--right">
+                <i class="fa fa-user input-icon__icon"></i>
+                <input class="input text--small" type="text" placeholder="username"/>
+              </div>
+            </div>
+            <div class="grid__item grid__item--2">
+              <div class="input-icon input-icon--right">
+                <i class="fa fa-lock input-icon__icon"></i>
+                <label class="label">Password*</label>
+              </div>
+              <div class="input-icon input-icon--right">
+                <i class="fa fa-lock input-icon__icon"></i>
+                <input class="input text--small" type="password" placeholder="Password"/>
+              </div>
+            </div>
+            <div class="grid__item grid__item--2">
+              <br>
+              <button id="loginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
+              <a id="forgetPasswordLink" class="hyperlink" href="#getPassword" onclick="getPasswordPage()"> forgetpassword </a>
+            </div>
+          </div>
         <br>
         <div id="grid">
           <div class="grid__item grid__item--12">
@@ -59,13 +81,13 @@
         <div class="grid">
           <div class="grid__item grid__item--2">
             <div class="input-icon--left">
-              <button class="btn btn--default btn--primary btn--round"> <i class="fa fa-facebook-official"></i> login </button>
+              <button class="btn btn--default btn--primary btn--round" onclick="fgLoginPage()"> <i class="fa fa-facebook-official"></i> login </button>
               <span class="span size">or</span>
             </div>
           </div>
           <div class="grid__item grid__item--2">
             <div class="input-icon--left">
-              <button class="btn btn--default btn--alert btn--round"> <i class="fa fa-google-plus"></i> login </button>
+              <button class="btn btn--default btn--alert btn--round" onclick="fgLoginPage()"> <i class="fa fa-google-plus"></i> login </button>
               <span class="span size">or</span>
             </div>
           </div>
@@ -76,7 +98,7 @@
       </form>
     </div>
     <!-- get password div-->
-    <div id="getPassword" class="styleDiv">
+    <div id="getPassword" class="styleDiv hide">
       <form id="forgetPassword" class="design">
         <div class="grid">
           <div class="grid__item grid__item--12">
@@ -113,7 +135,7 @@
       </form>
     </div>
     <!-- reset password div -->
-    <div id="resetPassword" class="styleDiv">
+    <div id="resetPassword" class="styleDiv hide">
       <form id="resetPasswordForm" class="design">
         <div class="grid">
           <div class="grid__item grid__item--12">
@@ -150,7 +172,7 @@
       </form>
     </div>
     <!-- sign up div-->
-    <div id="signup" class="styleDiv">
+    <div id="signup" class="styleDiv hide">
       <form id="signupForm" class="design">
         <div class="grid">
           <div class="grid__item--12">
@@ -259,7 +281,7 @@
       </form>
     </div>
     <!-- form div -->
-    <div id="formDiv">
+    <div id="formDiv" class="styleDiv hide">
       <form id="formGrid" class="design">
         <div class="grid">
           <div class="grid__item grid__item--3">Create Quote</div>
@@ -396,5 +418,42 @@
         </div>
       </form>
     </div>
+    <!-- facebook and google+ login-->
+    <div id="login" class="styleDiv hide">
+      <form id="fblogin" class="design">
+        <div class="grid">
+          <div class="grid__item grid__item--12">
+            <label> User Login </label>
+          </div>
+        </div>
+        <hr>
+        <div class="grid">
+          <div class="grid__item grid__item--2">
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-user input-icon__icon"></i>
+              <label class="label">Username*</label>
+            </div>
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-user input-icon__icon"></i>
+              <input class="input text--small" type="text" placeholder="username"/>
+            </div>
+          </div>
+          <div class="grid__item grid__item--2">
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-lock input-icon__icon"></i>
+              <label class="label">Password*</label>
+            </div>
+            <div class="input-icon input-icon--right">
+              <i class="fa fa-lock input-icon__icon"></i>
+              <input class="input text--small" type="password" placeholder="Password"/>
+            </div>
+          </div>
+          <div class="grid__item grid__item--2">
+            <br>
+            <button id="fgloginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
+          </div>
+        </div>
+      </form>
+  </div>
   </body>
 </html>
