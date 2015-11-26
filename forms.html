@@ -6,24 +6,32 @@
     <link rel="stylesheet" type="text/css" href="hyphen.css">
     <link rel="stylesheet" type="text/css" href="forms.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script>
+    $(document).ready(function() {
+       $("#datepicker").datepicker();
+     });
+     </script>-->
     <script src="jquery-1.11.3.js"></script>
     <script src="forms.js"></script>
   </head>
   <body>
     <!-- login div-->
-    <div id="loginDiv" class="styleDiv show">
+    <div id="loginDiv" class="styleDiv show grid__item grid__item--6">
       <form id="loginForm" class="design">
         <div class="grid">
-          <div class="grid__item grid__item--12">
-            <label> Guest Login </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> Guest Login </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
-              <label class="label"> E-mail </label>
+              <label class="label text--secondary"> E-mail </label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
@@ -32,20 +40,20 @@
           </div>
           <div class="grid__item grid__item--3">
             <br>
-            <button id="gloginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
+            <button id="gloginbtn" class="btn btn--secondary btn--default btn--round right" onclick="loginPage()"> Login </button>
           </div>
         </div>
           <div class="grid">
-            <div class="grid__item grid__item--12">
-              <label> User Login </label>
+            <div class="grid__item grid__item--6">
+              <label class="text text--primary text--large"> User Login </label>
+              <hr>
             </div>
           </div>
-          <hr>
           <div class="grid">
             <div class="grid__item grid__item--2">
               <div class="input-icon input-icon--right">
                 <i class="fa fa-user input-icon__icon"></i>
-                <label class="label">Username*</label>
+                <label class="label text--secondary">Username*</label>
               </div>
               <div class="input-icon input-icon--right">
                 <i class="fa fa-user input-icon__icon"></i>
@@ -55,7 +63,7 @@
             <div class="grid__item grid__item--2">
               <div class="input-icon input-icon--right">
                 <i class="fa fa-lock input-icon__icon"></i>
-                <label class="label">Password*</label>
+                <label class="label text--secondary">Password*</label>
               </div>
               <div class="input-icon input-icon--right">
                 <i class="fa fa-lock input-icon__icon"></i>
@@ -64,53 +72,50 @@
             </div>
             <div class="grid__item grid__item--2">
               <br>
-              <button id="loginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
-              <a id="forgetPasswordLink" class="hyperlink" href="#getPassword" onclick="getPasswordPage()"> forgetpassword </a>
+              <button id="loginbtn" class="btn btn--secondary btn--default btn--round right" onclick="loginPage()"> Login </button>
+              <a id="forgetPasswordLink" class="hyperlink text--small right" href="#getPassword" onclick="getPasswordPage()"> forgetpassword </a>
             </div>
           </div>
         <br>
-        <div id="grid">
-          <div class="grid__item grid__item--12">
-            <label>Sign up</label>
+        <div class="grid">
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large">Sign up</label>
+            <hr>
           </div>
         </div>
-        <hr>
-        <hr>
-        <hr>
-        <br>
         <div class="grid">
           <div class="grid__item grid__item--2">
             <div class="input-icon--left">
-              <button class="btn btn--default btn--primary btn--round" onclick="fgLoginPage()"> <i class="fa fa-facebook-official"></i> login </button>
-              <span class="span size">or</span>
+              <button class="btn btn--default btn--primary btn--round left" onclick="fgLoginPage()"> <i class="fa fa-facebook-official"></i> login </button>
+              <span class="span size right">or</span>
             </div>
           </div>
           <div class="grid__item grid__item--2">
             <div class="input-icon--left">
-              <button class="btn btn--default btn--alert btn--round" onclick="fgLoginPage()"> <i class="fa fa-google-plus"></i> login </button>
-              <span class="span size">or</span>
+              <button class="btn btn--default btn--alert btn--round middle" onclick="fgLoginPage()"> <i class="fa fa-google-plus"></i> login </button>
             </div>
           </div>
           <div class="grid__item grid__item--2">
-            <button id="signupbtn" class="btn btn--default btn--tertiary btn--round" onclick="signupPage()"> Sign up </button>
+            <span class="span size left">or</span>
+            <button id="signupbtn" class="btn btn--default btn--tertiary btn--round right" onclick="signupPage()"> Sign up </button>
           </div>
         </div>
       </form>
     </div>
     <!-- get password div-->
-    <div id="getPassword" class="styleDiv hide">
+    <div id="getPassword" class="styleDiv hide grid__item grid__item--6">
       <form id="forgetPassword" class="design">
         <div class="grid">
-          <div class="grid__item grid__item--12">
-            <label> Forget Password </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> Forget Password </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
-              <label class="label">Username*</label>
+              <label class="label text--secondary">Username*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
@@ -120,7 +125,7 @@
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
-              <label class="label"> E-mail </label>
+              <label class="label text--secondary"> E-mail </label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
@@ -129,25 +134,25 @@
           </div>
           <div class="grid__item grid__item--2">
             <br>
-            <button id="resetPasswordbtn" class="btn btn--secondary btn--default" onclick="resetPasswordPage()"> reset Password </button>
+            <button id="resetPasswordbtn" class="btn btn--secondary btn--default right" onclick="resetPasswordPage()"> reset Password </button>
           </div>
         </div>
       </form>
     </div>
     <!-- reset password div -->
-    <div id="resetPassword" class="styleDiv hide">
+    <div id="resetPassword" class="styleDiv hide grid__item grid__item--6">
       <form id="resetPasswordForm" class="design">
         <div class="grid">
-          <div class="grid__item grid__item--12">
-              <label> Reset Password </label>
+          <div class="grid__item grid__item--6">
+              <label class="text text--primary text--large"> Reset Password </label>
+                <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <label class="label"> New Password*</label>
+              <label class="label text--secondary"> New Password*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
@@ -157,50 +162,52 @@
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <label class="label"> Re-type Password*</label>
+              <label class="label text--secondary"> Re-type Password*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
               <input class="input input--alert text--small" type="password" placeholder="Re-TypePassword"/>
             </div>
+            <div class="alert text--small text--alert"> Re-enter password </div>
           </div>
           <div class="grid__item grid__item--2">
             <br>
-            <button id="submitPasswordbtn" class="btn btn--success btn--default" onclick="signoutPage()"> Change password </button>
+            <button id="submitPasswordbtn" class="btn btn--success btn--default right" onclick="signoutPage()"> Change password </button>
           </div>
         </div>
       </form>
     </div>
     <!-- sign up div-->
-    <div id="signup" class="styleDiv hide">
+    <div id="signup" class="styleDiv hide grid__item grid__item--6 right rightDiv">
       <form id="signupForm" class="design">
         <div class="grid">
-          <div class="grid__item--12">
-            <label> Sign up </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> Sign up </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--3">
-            <label class="label"> First name* </label>
+            <label class="label text--secondary"> First name* </label>
             <input type="text" class="input input--alert text--small" placeholder="first name*"/>
+            <div class="alert text--small text--alert"> enter your name </div>
           </div>
           <div class="grid__item grid__item--3">
-            <label class="label"> Last name </label>
+            <label class="label text--secondary"> Last name </label>
             <input type="text" class="input text--small" placeholder="Last name"/>
           </div>
         </div>
         <div class="grid">
           <div class="grid__item grid__item--3">
-            <label class="label"> Date of Birth </label>
+            <label class="label text--secondary"> Date of Birth </label>
             <div class="input-icon input-icon--right">
               <i class="fa fa-calendar input-icon__icon"></i>
-              <input type="text" class="input text--small" placeholder="date of birth"/>
+              <input type="date" class="input text--small" placeholder="date of birth"/>
             </div>
           </div>
           <div class="grid__item grid__item--3">
             <br>
-            <label class="label"> Gender </label>
+            <label class="label text--secondary"> Gender </label>
             <br>
               <input type="radio" name="gender" value="male"> Male
               <input type="radio" name="gender" value="female"> Female
@@ -210,62 +217,68 @@
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
-              <label class="label"> E-mail </label>
+              <label class="label text--secondary"> E-mail* </label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
               <input class="input input--alert text--small" type="text" placeholder="E-mail*"/>
+              <div class="alert text--small text--alert"> enter your mail id </div>
             </div>
           </div>
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
-              <label class="label">Username*</label>
+              <label class="label text--secondary">Username*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
               <input class="input input--alert text--small" type="text" placeholder="username*"/>
+              <div class="alert text--small text--alert"> create new username </div>
             </div>
           </div>
           <div class="grid__item grid__item--2">
             <br>
-            <button class="btn btn--default btn--tertiary"> Check availability </button>
+            <button class="btn btn--default btn--tertiary right"> Check availability </button>
           </div>
         </div>
         <div class="grid">
           <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <label class="label"> New Password*</label>
+              <label class="label text--secondary"> Password*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <input class="input text--small" type="password" placeholder="NewPassword"/>
+              <input class="input text--small" type="password" placeholder="Password*"/>
             </div>
           </div>
           <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <label class="label"> Re-type Password*</label>
+              <label class="label text--secondary"> Re-type Password*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <input class="input input--alert text--small" type="password" placeholder="Re-TypePassword"/>
+              <input class="input input--alert text--small" type="password" placeholder="Re-TypePassword*"/>
+              <div class="alert text--small text--alert"> re-enter password </div>
             </div>
           </div>
         </div>
         <div class="grid">
           <div class="grid__item grid__item--2">
-            <label class="label"> City* </label>
+            <label class="label text--secondary"> City* </label>
             <input class="input text--small" placeholder="City*"/>
+            <div class="alert text--small text--alert"> enter your city </div>
           </div>
           <div class="grid__item grid__item--2">
-            <label class="label"> State* </label>
+            <label class="label text--secondary"> State* </label>
             <select class="input"></select>
+            <div class="alert text--small text--alert"> select your state </div>
           </div>
           <div class="grid__item grid__item--2">
-            <label class="label"> Country* </label>
+            <label class="label text--secondary"> Country* </label>
             <select class="input"></select>
+            <div class="alert text--small text--alert"> select your country </div>
           </div>
         </div>
         <div class="grid">
@@ -274,67 +287,71 @@
           </div>
         </div>
         <div class="grid">
-          <div class="grid__item grid__item--12">
-            <button id="createbtn" class="btn btn--success btn--large" onclick="signoutPage()"> Create </button>
+          <div class="grid__item grid__item--6">
+            <button id="createbtn" class="btn btn--success btn--large right" onclick="loginPage()"> Create </button>
+            <button id="crancelbtn" class="btn btn--tertiary btn--large left" onclick="signoutPage()"> Cancel </button>
           </div>
         </div>
       </form>
     </div>
     <!-- form div -->
-    <div id="formDiv" class="styleDiv hide">
+    <div id="formDiv" class="styleDiv hide grid__item grid__item--6">
       <form id="formGrid" class="design">
         <div class="grid">
-          <div class="grid__item grid__item--3">Create Quote</div>
-          <div class="grid__item grid__item--3">
-            <a id="signoutLink" class="hyperlink" href="#loginDiv" onclick="signoutPage()"> signout</a>
+          <div class="grid__item grid__item--4"><label class="text text--primary text--large"><h3>Create Quote</h3></label></div>
+          <div class="grid__item grid__item--4">
+            <br>
             <button class="btn btn--default btn--tertiary btn--round"> Cancel </button>
             <button class="btn btn--default btn--success btn--round"><i class="fa fa-floppy-o"></i> Save </button>
+            <a id="signoutLink" class="hyperlink text--small" href="#loginDiv" onclick="signoutPage()"> signout</a>
           </div>
         </div>
         <br>
         <div class="grid">
-          <div class="grid__item grid__item--3">
-            <label> Customer Details </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> Customer Details </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--2">
-            <label class="label"> Username </label>
+            <label class="label text--secondary"> Username </label>
             <input type="text" class="input text--small input--disabled" placeholder="username"/>
           </div>
           <div class="grid__item grid__item--2">
-            <label class="label"> Email id </label>
+            <label class="label text--secondary"> Email id </label>
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon__icon"></i>
               <input type="text" class="input text--small input--disabled" placeholder="Email id"/>
             </div>
           </div>
           <div class="grid__item grid__item--2">
-            <label class="label"> Order no </label>
+            <label class="label text--secondary"> Order no </label>
             <input type="text" class="input text--small input--disabled" placeholder="Order no"/>
           </div>
         </div>
         <div class="grid">
-          <div class="grid__item grid__item--1">
-            <label>Quote Details</label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large">Quote Details</label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--3">
-            <label class="label"> Quote name </label>
+            <label class="label text--secondary"> Quote name </label>
             <input type="text" class="input text--small" placeholder="Quote name"/>
           </div>
           <div class="grid__item grid__item--3">
-            <label class="label"> Customer name* </label>
+            <label class="label text--secondary"> Customer name* </label>
             <input type="text" class="input input--alert text--small" placeholder="Customer name*"/>
-          </div>
+            </div>
+            <br>
+            <div class="alert text--small text--alert"> enter customer name </div>
         </div>
         <div class="grid">
           <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
-              <label class="label"> Delivery Goods to*
+              <label class="label text--secondary"> Delivery Goods<sub>to</sub>*
                 <i class="fa fa-pencil-square-o input-icon__icon"></i>
               </label>
             </div>
@@ -342,7 +359,7 @@
           </div>
           <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
-              <label class="label"> Billing to*
+              <label class="label text--secondary"> Billing<sub>to</sub>*
                 <i class="fa fa-pencil-square-o input-icon__icon"></i>
               </label>
             </div>
@@ -351,87 +368,87 @@
         </div>
         <div class="grid">
           <div class="grid__item grid__item--3">
-            <label class="label"> Address verified </label>
+            <label class="label text--secondary"> Address verified </label>
             <div class="input-icon input-icon--right">
               <i class="fa fa-toggle-off input-icon__icon"></i>
             </div>
           </div>
           <div class="grid__item grid__item--3">
-            <label class="label"> Order type </label>
+            <label class="label text--secondary"> Order type </label>
             <select class="input"></select>
           </div>
         </div>
         <br>
         <div class="grid">
-          <div class="grid__item grid__item--3">
-            <label> Additional Information </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> Additional Information </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--3">
-            <label class="label"> Payment terms</label>
+            <label class="label text--secondary"> Payment terms</label>
             <select class="input"></select>
           </div>
           <div class="grid__item grid__item--3">
-            <label class="label"> PO Number </label>
+            <label class="label text--secondary"> PO Number </label>
             <input type="text" class="input text--small" placeholder="PO Number"/>
           </div>
         </div>
         <div class="grid">
           <div class="grid__item grid__item--3">
-            <label class="label"> Expected Delivery Date </label>
+            <label class="label text--secondary"> Expected Delivery Date </label>
             <div class="input-icon input-icon--right">
               <i class="fa fa-calendar input-icon__icon"></i>
-              <input type="text" class="input text--small"/>
+              <input type="date" class="input text--small"/>
             </div>
           </div>
           <div class="grid__item grid__item--3">
-            <label class="label"> Requested Date </label>
+            <label class="label text--secondary"> Requested Date </label>
             <div class="input-icon input-icon--right">
               <i class="fa fa-calendar input-icon__icon"></i>
-              <input type="text" class="input text--small"/>
+              <input type="date" class="input text--small"/>
             </div>
           </div>
         </div>
         <br>
         <br>
         <div class="grid">
-          <div class="grid__item grid__item--2">
-            <label> Note to.... </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> Note to.... </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--2">
-            <label class="label"> Customer </label>
+            <label class="label text--secondary"> Customer </label>
             <textarea class="input text--small input--disabled" placeholder="Customer"></textarea>
           </div>
           <div class="grid__item grid__item--2">
-            <label class="label"> Back Office </label>
+            <label class="label text--secondary"> Back Office </label>
             <textarea class="input text--small input--disabled" placeholder="Back Office"></textarea>
           </div>
           <div class="grid__item grid__item--2">
-            <label class="label"> Carrier </label>
+            <label class="label text--secondary"> Carrier </label>
             <textarea class="input text--small input--disabled" placeholder="Carrier"></textarea>
           </div>
         </div>
       </form>
     </div>
     <!-- facebook and google+ login-->
-    <div id="login" class="styleDiv hide">
+    <div id="login" class="styleDiv hide grid__item grid__item--6">
       <form id="fblogin" class="design">
         <div class="grid">
-          <div class="grid__item grid__item--12">
-            <label> User Login </label>
+          <div class="grid__item grid__item--6">
+            <label class="text text--primary text--large"> User Login </label>
+            <hr>
           </div>
         </div>
-        <hr>
         <div class="grid">
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
-              <label class="label">Username*</label>
+              <label class="label text--secondary">Username*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
@@ -441,7 +458,7 @@
           <div class="grid__item grid__item--2">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
-              <label class="label">Password*</label>
+              <label class="label text--secondary">Password*</label>
             </div>
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
@@ -450,7 +467,7 @@
           </div>
           <div class="grid__item grid__item--2">
             <br>
-            <button id="fgloginbtn" class="btn btn--secondary btn--default btn--round" onclick="loginPage()"> Login </button>
+            <button id="fgloginbtn" class="btn btn--secondary btn--default btn--round right" onclick="loginPage()"> Login </button>
           </div>
         </div>
       </form>
