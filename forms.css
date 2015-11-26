@@ -3,7 +3,7 @@ body{
     background-color:#FFF8DC;
     padding: 25px;
 }
-#formDiv, #getPassword, #loginDiv, #resetPassword, #signup{
+.styleDiv{
     align-items: center;
     align-self: center;
     display: none;
@@ -15,7 +15,7 @@ body{
 #formDiv, #getPassword{
     background-color: #F0FFF0;
 }
-#forgetPassword, #formGrid, #loginForm, #resetPasswordForm, #signupForm{
+.design{
     align-items: center;
     background-color: #C0C0C0;
     border: double 5px;
