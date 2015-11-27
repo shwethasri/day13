@@ -112,7 +112,7 @@
           </div>
         </div>
         <div class="grid">
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
               <label class="label text--secondary">Username*</label>
@@ -122,7 +122,7 @@
               <input class="input text--small" type="text" placeholder="username"/>
             </div>
           </div>
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-envelope input-icon input-icon__icon"></i>
               <label class="label text--secondary"> E-mail </label>
@@ -132,7 +132,13 @@
               <input class="input text--small" type="text" placeholder="E-mail"/>
             </div>
           </div>
-          <div class="grid__item grid__item--2">
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <br>
+            <button id="crancelfpbtn" class="btn btn--tertiary btn--default left" onclick="signoutPage()"> Cancel </button>
+          </div>
+          <div class="grid__item grid__item--3">
             <br>
             <button id="resetPasswordbtn" class="btn btn--secondary btn--default right" onclick="resetPasswordPage()"> reset Password </button>
           </div>
@@ -149,7 +155,7 @@
           </div>
         </div>
         <div class="grid">
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
               <label class="label text--secondary"> New Password*</label>
@@ -159,7 +165,7 @@
               <input class="input text--small" type="password" placeholder="NewPassword"/>
             </div>
           </div>
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
               <label class="label text--secondary"> Re-type Password*</label>
@@ -170,9 +176,15 @@
             </div>
             <div class="alert text--small text--alert"> Re-enter password </div>
           </div>
-          <div class="grid__item grid__item--2">
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
             <br>
-            <button id="submitPasswordbtn" class="btn btn--success btn--default right" onclick="signoutPage()"> Change password </button>
+            <button id="crancelrpbtn" class="btn btn--tertiary btn--default left" onclick="signoutPage()"> Cancel </button>
+          </div>
+          <div class="grid__item grid__item--3">
+            <br>
+            <button id="submitPasswordbtn" class="btn btn--success btn--default right" onclick="loginPage()"> Change password </button>
           </div>
         </div>
       </form>
@@ -445,7 +457,7 @@
           </div>
         </div>
         <div class="grid">
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-user input-icon__icon"></i>
               <label class="label text--secondary">Username*</label>
@@ -455,7 +467,7 @@
               <input class="input text--small" type="text" placeholder="username"/>
             </div>
           </div>
-          <div class="grid__item grid__item--2">
+          <div class="grid__item grid__item--3">
             <div class="input-icon input-icon--right">
               <i class="fa fa-lock input-icon__icon"></i>
               <label class="label text--secondary">Password*</label>
@@ -465,7 +477,14 @@
               <input class="input text--small" type="password" placeholder="Password"/>
             </div>
           </div>
-          <div class="grid__item grid__item--2">
+
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--3">
+            <br>
+            <button id="crancelfgbtn" class="btn btn--tertiary btn--default left" onclick="signoutPage()"> Cancel </button>
+          </div>
+          <div class="grid__item grid__item--3">
             <br>
             <button id="fgloginbtn" class="btn btn--secondary btn--default btn--round right" onclick="loginPage()"> Login </button>
           </div>
